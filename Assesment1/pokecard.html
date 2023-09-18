@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pokemon-card {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    width: 300px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #000;
+}
+
+.pokemon-number {
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.pokemon-name {
+    font-size: 24px;
+    margin: 0;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pokemon-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.type {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+
+.type1 {
+    background-color: #f34444; /* Red for Type1 */
+}
+
+.type2 {
+    background-color: #3388ff; /* Blue for Type2 */
+}
+
+.description {
+    font-size: 16px;
+    margin: 0;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+    </style>
+    <title>Pokémon Card</title>
+</head>
+<body>
+    <div class="pokemon-card">
+        <div class="card-header">
+            <span class="pokemon-number">001</span>
+            <h2 class="pokemon-name">Charizard</h2>
+        </div>
+        <div class="card-content">
+            <img src="R.png" alt="Pokemon Image" class="pokemon-image">
+            <div class="types">
+                <span class="type type1">Fire</span>
+                <span class="type type2">Flying</span>
+            </div>
+            <p class="description">This is the Pokémon's Charizard is a Fire / Flying type Pokémon introduced in Generation 1. It has two large wings, the underside of which are turquoise.</p>
+        </div>
+    </div>
+</body>
+</html>
